@@ -14,7 +14,7 @@ function addLinha(){
     const inputNome = document.getElementById('nome');
     const inputTel = document.getElementById('telefone');
 
-    if(telefones.includes(inputTel.value)){
+    if(telefones.includes(parseInt(inputTel.value))){
         alert(`O telefone: ${inputTel.value} já foi inserido`);
     } else {
         nomes.push(inputNome.value);
